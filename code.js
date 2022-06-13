@@ -6,6 +6,10 @@ function foo() {
     return 2;
 }
 
-let sayHello = function () {
-    return "Hello, Jane!";
+let sayHello = function(input) {
+    if (input === "Alex") {
+        return "Hello, Alex!";
+    } else {
+        return "Hello, Jane!";
+    }
 }
