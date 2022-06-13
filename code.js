@@ -7,5 +7,13 @@ function foo() {
 }
 
 let sayHello = function(input) {
-    return "Hello, " + input + "!";
+        if( input === true || input === false || input === null || input === "") {
+            return "Hello, World!"
+
+            } else {
+            return "Hello, " + input + "!";
+
+        }
+
 }
+sayHello();

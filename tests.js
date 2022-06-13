@@ -40,16 +40,36 @@ describe("sayHello", function() {
         expect(sayHello("Jane")).toBe("Hello, Jane!");
     });
 
-    it('should return the string "Hello, Alex!" when called', function() {
+    it('should return the string, "Hello, Alex!" when executed', function() {
         expect(sayHello("Alex")).toBe("Hello, Alex!");
     });
 
-    it('should return the string "Hello, Pat!" when called', function() {
+    it('should return the string, "Hello, Pat!" when executed', function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
 
-    it('should return the string, "Hello, World!', function() {
+    it('should return the string, "Hello, World!" when executed', function() {
+        expect(sayHello("World")).toBe("Hello, World!");
+    });
 
-    })
+    it('should return the string, "Hello, World!" when passed the boolean value of true', function() {
+        expect(sayHello(true)).toBe("Hello, World!")
+    });
+
+    it('should return the string, Hello, World!" when passed the boolean value of false', function() {
+        expect(sayHello(false)).toBe("Hello, World!")
+    });
+
+    it('should return the string, "Hello, World! when passed the argument null', function() {
+        expect(sayHello(null)).toBe("Hello, World!");
+    });
+
+    it('should return the string, "Hello, World!" when passed an empty string', function() {
+        expect(sayHello("")).toBe("Hello, World!");
+    });
+
+
+
+
 });
 
