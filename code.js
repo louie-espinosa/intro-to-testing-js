@@ -7,5 +7,5 @@ function foo() {
 }
 
 let sayHello = function () {
-
+    return "";
 }
