@@ -37,7 +37,7 @@ describe("sayHello", function() {
     });
 
     it('should return the string, "Hello, Jane!" when executed', function() {
-        expect(sayHello()).toBe("Hello, Jane!");
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
     });
 
     it('should return the string "Hello, Alex!" when called', function() {
@@ -48,6 +48,8 @@ describe("sayHello", function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
 
+    it('should return the string, "Hello, World!', function() {
 
+    })
 });
 
