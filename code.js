@@ -7,7 +7,7 @@ function foo() {
 }
 
 let sayHello = function(input) {
-        if( input === true || input === false || input === null || input === "") {
+        if (typeof input === "number"  || typeof input !== "string" || typeof input === ""){
             return "Hello, World!"
 
             } else {
@@ -16,4 +16,9 @@ let sayHello = function(input) {
         }
 
 }
-sayHello();
+let isFive = function(input) {
+    return 5;
+}
+let isEven = function(x) {
+    return x % 2 === 0;
+}
