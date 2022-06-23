@@ -6,8 +6,8 @@ function foo() {
     return 2;
 }
 
-let sayHello = function(input) {
-        if (typeof input === "number"  || typeof input !== "string" || typeof input === ""){
+ let sayHello = function(input) {
+        if (typeof input !== "string" || input === "" || !isNaN(input)){
             return "Hello, World!"
 
             } else {
@@ -16,9 +16,13 @@ let sayHello = function(input) {
         }
 
 }
-let isFive = function(input) {
-    return 5;
+  let isFive = function(input) {
+    return input == 5;
+
+
 }
-let isEven = function(x) {
-    return x % 2 === 0;
+let isEven = function(input) {
+    return input % 2 === 0;
 }
+
+

@@ -88,31 +88,38 @@ describe("sayHello", function() {
             expect(typeof isFive).toBe('function');
         });
 
-        it('should return true when passed the number 5', function () {
-            expect(typeof isFive()).toBe("number");
+        it('should return a boolean when called', function () {
+            expect(typeof isFive()).toBe("boolean");
         });
 
-        it('should return true when passed a string of 5', function () {
-            expect(typeof isFive("5")).toBe("number");
+        it("should return 'false' when executed", function(){
+            expect(isFive()).toBe(false)
+        })
+
+        it('should return "true" when passed a string of 5', function () {
+            expect(isFive("5")).toBe(true);
         });
 
-        it("should return isFive() === 5", function () {
-            let expectedResult = 5;
-            let actualResult = 5;
-            expect(actualResult).toBe(expectedResult);
-        });
     });
 
         describe('isEven', function() {
 
-            it('should be a defined function', function() {
+            it('should be a defined function', function () {
                 expect(typeof isEven).toBe('function');
             });
 
-            it('should return "true" when called with a positive or negative even number', function() {
-                expect(isEven()).toBe("true")
-            })
-        })
+            it('should return a boolean when called', function () {
+                expect(typeof isEven()).toBe("boolean");
+
+            });
+
+            it("should return 'true' when called with a positive even number", function () {
+                expect(typeof isEven(2)).toBe(true)
+            });
+
+
+
+        });
 
 
 
